@@ -1,7 +1,7 @@
 import './App.css'
 import { Routes, Route, Navigate } from "react-router-dom"
 import Currency from './components/Currency'
-import Login from './components/Login'
+import Login from './components/Login/Login'
 import Currencies from './components/Currencies'
 import EditCurrency from './components/EditCurrency'
 
