@@ -1,0 +1,21 @@
+.container {
+  background-color: aqua;
+  border-width: 2px;
+  border-color: darkolivegreen;
+} 
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.close {
+  height: 30px;
+  width: 30px;
+  &:before {
+    content: "\d7";
+    font-size: 50px;
+    color: rgb(58, 58, 58);
+  }
+}

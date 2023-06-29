@@ -1,0 +1,61 @@
+.container {
+  background-color: whitesmoke;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 20px;
+}
+
+.details {
+  background-color: whitesmoke;
+  margin: 10px 10px 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  display: block;
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 3em;
+  color: aliceblue;
+  position: relative;
+}
+
+.brand {
+  font-weight: bold;
+  color: rgba(211, 211, 211, 0.808);
+}
+
+.store {
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.icon_alert {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+}
+
+.icon_account {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+}

@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html {
   height: 100%;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Open Sans', sans-serif;
   min-height: 100%;
+  background-image: url("https://i.pinimg.com/originals/f7/f1/e4/f7f1e492694fcbb26f79d531b64c43ea.jpg");
 }

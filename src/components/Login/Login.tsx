@@ -38,10 +38,10 @@ const Login = () => {
               <Stack gap={2}>
                 <Form.Group controlId='username'>
                   <Form.Label >Please enter your email and password</Form.Label>
-                  <Form.Control required placeholder='Your email address' ref={userNameRef} />
+                  <Form.Control placeholder='Your email address' ref={userNameRef} />
                 </Form.Group>
                 <Form.Group  controlId='password'>
-                  <Form.Control required className="focus-ring focus-ring-danger" placeholder='Password' ref={passwordRef} />
+                  <Form.Control className="focus-ring focus-ring-danger" placeholder='Password' ref={passwordRef} />
                 </Form.Group>
                 <Button type="submit" variant='danger'>Login</Button>
               </Stack>

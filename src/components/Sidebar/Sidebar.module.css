@@ -1,0 +1,37 @@
+.container {
+  width: 300px;
+  min-height: 100vh;
+  background-color: rgb(240, 229, 229);
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  color: rgba(237, 240, 240, 0.726);
+  margin-top: 10px;
+  background-color: rgb(240, 229, 229);
+  border-width : 0;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50px;
+}
+
+.list_item span {
+  margin-left: 30px;
+  color: rgb(83, 82, 82);
+}
+
+.list_item:hover {
+  background-color: rgba(202, 199, 199, 0.801);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  margin-left: 30px;
+}

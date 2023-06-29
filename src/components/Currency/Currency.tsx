@@ -1,8 +1,9 @@
 import React from 'react'
+import style from "./Currency.module.css"
 
 const Currency = () => {
   return (
-    <div>Currency</div>
+    <div className={style.currency}>Currency</div>
   )
 }
 
