@@ -8,10 +8,24 @@ const AddCurrency = () => {
         <div>
           <div className={style.close} />
           <div className={style.label}>Add Currency</div>
-       </div>
+        </div>
         < div className={style.button_group}>
           <button className={style.cancel}>Cancel</button>
           <button className={style.add}>Add</button>
+        </div>
+      </div>
+      <div className={style.form}>
+        <div className={style.form_unit}>
+          <label htmlFor="">Currency name</label>
+          <input type="text" />
+        </div>
+        <div className={style.form_unit}>
+          <label htmlFor="">Currency code</label>
+          <input type="text" />
+        </div>
+        <div className={style.form_unit}>
+          <label htmlFor="">Currency symbol</label>
+          <input type="text" />
         </div>
       </div>
     </div>

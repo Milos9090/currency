@@ -26,7 +26,9 @@
 }
 
 .list_item:hover {
-  background-color: rgba(202, 199, 199, 0.801);
+  background-color: rgba(231, 143, 11, 0.507);
+  font-weight: bold;
+  color: orange;
 }
 
 .icon {

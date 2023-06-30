@@ -1,13 +1,18 @@
 .container {
-  background-color: aqua;
-  border-width: 2px;
-  border-color: darkolivegreen;
+  background-color: whitesmoke;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(88, 88, 88, 0.548);
 } 
 
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(88, 88, 88, 0.548);
 }
 
 .close {
@@ -16,6 +21,57 @@
   &:before {
     content: "\d7";
     font-size: 50px;
-    color: rgb(58, 58, 58);
+    color: rgba(88, 88, 88, 0.548);
   }
+}
+
+.label {
+  margin-left: 50px;
+  font-weight: bold;
+  color: rgba(88, 88, 88, 0.548);
+}
+
+.button_group {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.add {
+  height: 40px;
+  margin-left: 10px;
+  background-color: orangered;
+  color: aliceblue;
+  border-radius: 10%;
+  border-width: 0.5px;
+  border-color: orange;
+}
+
+.cancel {
+  font-weight: bold;
+  height: 40px;
+  margin-left: 10px;
+  color: rgba(88, 88, 88, 0.548);
+  border-radius: 10%;
+  border-width: 0.5px;
+  border-color: rgba(88, 88, 88, 0.548);
+}
+
+.form_unit {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+  color: rgba(88, 88, 88, 0.548);
+  font-weight: bold;
+}
+
+input{
+  border-radius: 5px;
+  border-color: rgba(88, 88, 88, 0.39);
+  height: 40px;
+}
+
+input:hover, input:focus {
+  border-color: orangered;
 }
