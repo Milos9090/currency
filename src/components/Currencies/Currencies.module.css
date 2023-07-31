@@ -8,3 +8,8 @@
   display: grid;
   grid-template-columns: 300px 4fr 2fr;
 }
+
+.main_with {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}

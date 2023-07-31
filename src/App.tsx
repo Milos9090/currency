@@ -3,16 +3,16 @@ import { Routes, Route, Navigate } from "react-router-dom"
 import Currency from './components/Currency/Currency'
 import Login from './components/Login/Login'
 import Currencies from './components/Currencies/Currencies'
-import AddCurrency from './components/AddCurrency/AddCurrency'
 
 function App() {  
   return <>
    <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/index" element={<Currencies />} />
+        <Route path="/index" element={<Currencies page="index"/>} />
+        <Route path="/add" element={<Currencies page="add"/>} />
         <Route path="/:id" >
-          <Route index element={<Currency />} />
-          <Route path="edit" element={<AddCurrency />} />
+          <Route index element={<Currencies page="index" />} />
+          <Route path="edit" element={<Currencies page="edit"/>} />
         </Route>
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>

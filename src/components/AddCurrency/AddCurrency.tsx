@@ -1,16 +1,27 @@
 import React from 'react'
 import style from "./AddCurrency.module.css"
+import { Link } from 'react-router-dom'
+import { useLocalStorage } from '../../utils/useLocalStorage'
+import { Currencies } from '../Currency/Currency'
+
 
 const AddCurrency = () => {
+  
+  const [currencies, setCurrencies] = useLocalStorage<Currencies[]>("CURRENCIES", [])
+  
   return (
     <div className={style.container}>
       <div className={style.header}>
         <div>
-          <div className={style.close} />
+          <Link to="/index">
+            <div className={style.close} />
+          </Link>
           <div className={style.label}>Add Currency</div>
         </div>
         < div className={style.button_group}>
-          <button className={style.cancel}>Cancel</button>
+          <Link to="/index">
+            <button className={style.cancel}>Cancel</button>
+          </Link>
           <button className={style.add}>Add</button>
         </div>
       </div>

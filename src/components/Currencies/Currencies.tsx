@@ -5,14 +5,18 @@ import Sidebar from '../Sidebar/Sidebar';
 import Currency from '../Currency/Currency';
 import AddCurrency from '../AddCurrency/AddCurrency';
 
-const Currencies = () => {
+type PropCurrencies = {
+  page: string;
+}
+
+const Currencies = (props: PropCurrencies) => {
   return (
     <main className={style.container}>
     <Header />
-    <section className={style.main}>
+    <section className={style[props.page !== "index" ? "main" : "main_with"]}>
     <Sidebar />
     <Currency />
-    <AddCurrency />
+    {props.page !== "index" ? <AddCurrency /> : null}
     </section>
     </main>
   )
